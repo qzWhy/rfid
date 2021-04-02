@@ -1,0 +1,41 @@
+group 'com.blueocean.flutter_rfid'
+version '1.0'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+dependencies {
+    implementation files('libs\\cw-deviceapi20191022.jar')
+    implementation files('libs\\IGLBarDecoder.jar')
+    implementation files('libs\\jxl.jar')
+    implementation files('libs\\xUtils-2.5.5.jar')
+    // 引入support支持库的multidex库
+    implementation 'com.android.support:multidex:1.0.3'
+}
