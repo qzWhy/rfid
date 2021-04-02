@@ -1,8 +1,8 @@
 name: flutter_rfid
 description: A new Flutter plugin.
 version: 0.0.1
-author: 轻舟
-homepage:https://github.com/qzWhy/rfid
+author: 轻舟 <f745680110@gmail.com>
+homepage: https://github.com/qzWhy/rfid
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
